@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy New Year!</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: url("hny.gif") fixed center;
+      background-size: cover;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      overflow: hidden;
+    }
+
+    .new-year-container {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fadeInUp 1s ease-out 1s forwards;
+      padding: 20px;
+      border-radius: 20px;
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    h1 {
+      font-size: 3.5em;
+      margin-bottom: 10px;
+      color: #f39c12;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    p {
+      font-size: 1.3em;
+      line-height: 1.6;
+    }
+
+    .new-year-container:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="new-year-container">
+    <h1>Happy New Year!</h1>
+    <p>Wishing you joy, peace, and success in the coming year.</p>
+  </div>
+</body>
+</html>
